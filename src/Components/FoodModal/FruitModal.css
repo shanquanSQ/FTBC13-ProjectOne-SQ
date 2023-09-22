@@ -1,0 +1,155 @@
+.btn-close {
+  /* What's the difference between absolute, fixed and relative? */
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+
+  /* background-image: url("../../Icons/close.svg"); */
+
+  /* border: 0px;
+  border-radius: 0.2rem;
+
+  width: 1rem;
+  height: 1rem; */
+  background-color: rgb(240, 240, 240);
+  border: 0.2px solid rgb(216, 216, 216);
+  border-radius: 1rem;
+
+  background-position: center;
+  background-position-y: 0.1rem;
+  background-repeat: no-repeat;
+  /* background-color: white; */
+  /* box-shadow: 20px 20px black; */
+}
+
+.modalWindow {
+  /* not sure why this position needs to be fixed, or it breaks catalogWrapper */
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80%;
+  /* height: 100vh; */
+  z-index: 99;
+
+  padding: 0rem;
+  transform: translate(-50%, 0%);
+  left: 50%;
+
+  /* border: 1px solid black; */
+
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modalWindowActive {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modalText {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  padding: 0rem;
+
+  width: 100%;
+  max-height: 85vh;
+  height: 100%;
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 1rem;
+
+  position: relative;
+  z-index: 99;
+
+  font-family: "Playfair Display", serif;
+  line-height: 1rem;
+  overflow: hidden;
+
+  .primary {
+    font-size: 1.3rem;
+    line-height: 3rem;
+  }
+  .paddingFix {
+    padding: 0rem 2.5rem 0rem 2.5rem;
+    margin-bottom: 2rem;
+    overflow-y: auto;
+  }
+  .miniHeader {
+    /* padding: 0rem 0rem 0rem 2.5rem; */
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    line-height: 2rem;
+    align-self: start;
+
+    color: hsl(0, 0%, 49%);
+  }
+
+  .secondary {
+    /* padding: 0rem 2.5rem 0rem 2.5rem; */
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 20%);
+    overflow-y: auto;
+  }
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsla(0, 0%, 12%, 0.6);
+  z-index: 98;
+}
+
+.lockedScroll {
+  overflow-y: hidden;
+}
+
+/* IMAGES */
+.imgHolder {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  align-items: center;
+  padding: 0px;
+
+  overflow: hidden;
+
+  /* height: 10rem;
+  width: 10rem;
+ */
+  /* height: 15rem;
+  width: 15rem; */
+  min-height: 100%;
+  max-height: 20rem;
+  width: 100%;
+  /* object-fit: contain; */
+
+  /* border-radius: 1rem; */
+}
+
+.imgSrc-foodCard {
+  width: 100%;
+  height: auto;
+  /* max-height: 40%; */
+  /* Translate: x y */
+  /* Maybe should center the images manually first. */
+  translate: 0px 0px;
+  object-fit: cover;
+}
+
+/* .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+} */

@@ -1,38 +1,326 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainScreenContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  /* background-color: #fffae0; */
+
+  /* background: rgb(231, 192, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(229, 222, 255, 1) 0%,
+    rgba(244, 224, 238, 1) 30%,
+    rgba(255, 250, 224, 1) 100%
+  ); */
+
+  /* min-height: 100vh; */
+  /* max-height: 100vh; */
+  /* max-height: 100lvh; */
+
+  /* height: fit-content; */
+  height: 100%;
+  width: 100vw;
+  /* width: 100px; */
+  padding-top: 0em;
+  padding-bottom: 2em;
+
+  background-size: 100%;
+
+  /* position: sticky; */
+  /* padding: 200px 0px 0px 0px; */
+  /* not sure why adding any padding here affects the videoHolder */
 }
 
-.App-link {
-  color: #61dafb;
+.whiteoverlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: 100;
+
+  background-color: hsla(0, 0%, 100%);
+  opacity: 0;
+  animation: fadeIn 1s; /* Use a CSS animation with a 2-second duration */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Keyframes for the animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.whiteoverlayLogIn {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: 50;
+  /* somehow need the z-index to be under the log-in form, otherwise I can't type through */
+  /* Is there a way to get the z-index to change AFTER the animation? */
+  background-color: hsla(0, 0%, 100%);
+  opacity: 0;
+  animation: fadeIn2 1s; /* Use a CSS animation with a 2-second duration */
+}
+
+/* Keyframes for the animation */
+@keyframes fadeIn2 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 2rem;
+
+  align-items: baseline;
+  width: 100vw;
+  /* width: 100px; */
+
+  z-index: 999;
+  position: fixed;
+  right: 0rem;
+  padding: 1em 1em 1em 0px;
+
+  background-color: #fffae0;
+  box-shadow: rgba(170, 170, 170, 0.1) 0px 2px 2px 0px;
+
+  .searchbar-alignment {
+    justify-content: center;
+    width: 70%;
+  }
+
+  .switchbutton-alignment {
+    justify-content: center;
+    width: 30%;
+  }
+}
+
+#catalogWrapper {
+  /* display: grid; */
+  display: flex;
+  flex-direction: column;
+
+  /* row-gap: 1rem; */
+
+  width: 90vw;
+  padding: 4.5em 0em 0em 0em;
+  /* padding-top: 200px;
+  padding-bottom: 500px; */
+
+  /* text-align: center; */
+  /* the padding is somehow causing scrollbar both horizontally and vertically to appear if it exceeds vertically */
+
+  /* background-color: rgb(76, 243, 140); */
+  @media (min-width: 768px) {
+    padding: 5.5em 0em 0em 0em;
+  }
+}
+
+.foodCardWrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 0.5rem;
+  margin-bottom: 0.6rem;
+
+  overflow: hidden;
+}
+
+.foodCard {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  /* gap: 1rem; */
+
+  /* width: 80vw; */
+  height: 6rem;
+  width: 100%;
+
+  padding: 2.5rem 0rem 2.5rem 0rem;
+
+  /* Gap is clickable. for catalogWrapper */
+  /*Q: margins are still clickable, but now the top item doesnt have gap as oposed to when row-gap is used. */
+  /* margin: 0rem 0rem 0.6rem 0rem; */
+
+  background-color: rgb(255, 255, 255);
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 0.5rem; */
+
+  overflow: hidden;
+}
+
+.foodCard:hover {
+  box-shadow: rgba(155, 156, 156, 0.2) 0px 2px 6px 0px inset;
+}
+
+.foodCardText {
+  font-family: "Playfair Display", serif;
+  color: rgb(34, 34, 34);
+  line-height: 1rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* border: 1px solid black; */
+
+  .secondary {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 49%);
+  }
+}
+
+.addbutton-alignment {
+  /* display: flex;
+  justify-content: center; */
+
+  /* align-content: center;
+  justify-content: center;
+  align-self: center; */
+
+  /* Apparently centering a button is text-align. */
+  text-align: center;
+  width: 30%;
+
+  /* padding-left: 0.3rem; */
+  background-color: rgb(255, 255, 255);
+}
+
+/* LOG-IN PAGE */
+.loginWrapper {
+  /* If i enable flex, the nav bar also glitches. Not sure why. */
+  /* REMOVED NAV BAR */
+  /* display: flex;
+  justify-content: center; */
+  position: absolute;
+  bottom: 0;
+
+  text-align: center;
+  width: 100%;
+
+  /* margin-top: 50vh; */
+  /* min-height: 60svh; */
+  padding: 2rem 0rem 1.4rem 0rem;
+
+  /* text-align: center; */
+  /* the padding is somehow causing scrollbar both horizontally and vertically to appear if it exceeds vertically */
+
+  background-color: hsla(0, 0%, 100%, 1);
+  /* box-shadow: 5px 5px 9px rgba(94, 104, 121, 0.3); */
+  z-index: 60;
+}
+
+.loginBG {
+  /* position other than fixed will cause it to affect the navbar. */
+  /* position: relative;
+  top: -4em;
+  left: 0; */
+
+  width: 100%;
+  /* height: auto; */
+  /* height: 100%; */
+
+  z-index: -1;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.halfLogIn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  margin-top: 0em;
+
+  width: 100vw;
+  /* height: 50%; */
+  /* gap: 0px; */
+}
+
+.loginImgWrapper {
+  position: relative;
+
+  width: 100%;
+
+  .openingtext {
+    /* Even though it's absolute, it's always in relation to parent. i.e. the image. */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(4rem, 3vw + 4rem, 12rem);
+    line-height: clamp(3.5rem, 2vw + 3.5rem, 9rem);
+    padding: 0rem 1rem 0rem 1rem;
+  }
+}
+
+/* CATALOG */
+.catalog {
+  background-color: rgb(136, 231, 255);
+}
+
+.text-desc {
+  /* text-align: center; */
+  padding: 0em 0em 0em 0em;
+}
+
+/* LANDING PAGE */
+.landingtext {
+  font-family: "Poppins", sans-serif;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+
+  .openingtext {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(4rem, 3vw + 4rem, 12rem);
+    line-height: clamp(3.5rem, 2vw + 3.5rem, 9rem);
+    padding: 0rem 1rem 0rem 1rem;
+  }
+}
+
+#tagline {
+  text-align: center;
+  /* background-color: red; */
+  padding: 0rem 2rem 0rem 2rem;
+}
+
+.testing {
+  text-align: center;
+  padding-top: 5rem;
+
+  .errorText {
+    font-family: "Poppins", sans-serif;
   }
 }

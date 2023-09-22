@@ -1,0 +1,77 @@
+[
+  {
+    "id": "apple",
+    "imagelink": "../../Images/apple.jpg",
+    "visual": "Colour changes from green to light green; then to red or yellow. However, some highly colored apples change to red weeks before they are mature, so color is not always a reliable indicator.",
+    "feel": "Make sure it's firm to the touch. Avoid apples that are noticeably soft, mushy, or indent easily after you press the skin."
+  },
+
+  {
+    "id": "avocado",
+    "imagelink": "../../Images/avocado.jpg",
+    "visual": "Ripeness indicator of avocadoes are marked by a color change from bright yellow to dark green as the fruit ripens.",
+    "feel": "If the avocado yields to firm gentle pressure you know it's ripe and ready-to-eat."
+  },
+
+  {
+    "id": "banana",
+    "imagelink": "../../Images/banana.jpg",
+    "visual": "They should be evenly colored without any green patches. Avoid bananas that are too green or have brown spots, as they may not be ripe or could be overripe.",
+    "feel": "Gently squeeze the banana to check its firmness. Choose bananas that are neither too hard nor too soft."
+  },
+
+  {
+    "id": "cherry",
+    "imagelink": "../../Images/cherry.jpg",
+    "visual": "Ripe sweet cherries can be dark red, bright red, yellow, yellowish-red or black when fully ripe.",
+    "feel": "Ripe cherries are firm but juicy, plump, and tender. In addition to this, their stems will release from the tree with relative ease."
+  },
+
+  {
+    "id": "dragonfruit",
+    "imagelink": "../../Images/dragonfruit.jpg",
+    "visual": "To pick one that's perfectly ripe and sweet, look for bright, evenly-colored pink skin. A few blemishes on the exterior are OK, but dragon fruit with lots of funky-colored marks on the flesh may be overripe.",
+    "feel": "The skin should be a bit soft and tender when you press it with your thumb, but not mushy."
+  },
+
+  {
+    "id": "durian",
+    "imagelink": "../../Images/durian.jpg",
+    "visual": "If you're buying packet durians, one way to tell if they're ripe is to look for 'crumpled' flesh. The colour should be a rich, distinct yellow for optimum ripeness; anything too pale would mean that it's not at its peak yet.",
+    "feel": "The flesh of a ripened durian is soft, which allows the seeds to bang around inside the shell like filled maracas. If the seed is rattling around with no resistance, chances are the durian is overripe. What you want to hear are dull, subtle knocks. If you can't hear or feel anything at all, the durian flesh is hard - a matter of preference."
+  },
+
+  {
+    "id": "mango",
+    "imagelink": "../../Images/mango.jpg",
+    "visual": "Avoid choosing mangoes with wrinkled or shriveled skin because they will no longer be ripe.",
+    "feel": "A ripe mango will feel softer while an unripe one will have a firm skin. You can also gently press the mango but don't press hard enough, as you don't want to dent the mango."
+  },
+
+  {
+    "id": "orange",
+    "imagelink": "../../Images/orange.jpg",
+    "visual": "Skin color is not an indicator of flavor or ripeness. Those with greenish hues can be just as tasty as bright orange ones. No matter the variety, your orange should be a bright color. With navels, look for a vivid, solid orange hue. Ripe Valencias might still have a greenish tinge.",
+    "feel": "Choose oranges that feel heavy for their size - a sign of its water weight - the juicer it will be. Avoid any oranges with soft spots or those that feel spongy."
+  },
+
+  {
+    "id": "pineapple",
+    "imagelink": "../../Images/pineapple.jpg",
+    "visual": "As the fruit begins to ripen, it will turn yellow and golden in color and consistent throughout the body. A ripe pineapple will be yellow all the way to the crown which means that sugar has been evenly distributed throughout.",
+    "feel": "Pineapples soften slightly as they ripen. If it yields slightly there's a good chance it's ripe, but if it's very soft in patches it's probably over-ripe. Also, gently tug on one of the leaves. If it feels loose or comes off, your pineapple is ripe."
+  },
+
+  {
+    "id": "peach",
+    "imagelink": "../../Images/peach.jpg",
+    "visual": "The best peaches should have vibrant, yellow flesh and golden-reddish skin. Look towards the stem: a lighter yellow tone is a sign of a less ripe peach; brighter golden hues are signs of ripeness",
+    "feel": "If a peach feels somewhat soft and gives where your fingers grip it, it's ripe. As long as its skin doesn't show signs of damage or rot, the softer peach, the sooner you should eat it. If a peach feels firm, it needs more time to ripen."
+  },
+  {
+    "id": "strawberry",
+    "imagelink": "../../Images/strawberry.jpg",
+    "visual": "Ripe strawberries are berries that are uniform and complete in color. They will be red all the way around and down to and including the tips. Ripe strawberries have green stems and leaves that are a nice, fresh-looking green color. The leaves should not be dried, brown, or dying",
+    "feel": "Berries soften as they ripen. Hard berries are underripe berries. Soft berries that mush under your fingers are overripe."
+  }
+]
