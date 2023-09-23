@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "./static/css/main.6d0b11b7.css",
-    "main.js": "./static/js/main.6de474b1.js",
-    "static/js/787.dead08b4.chunk.js": "./static/js/787.dead08b4.chunk.js",
-    "static/media/strawberriesvid.mp4": "./static/media/strawberriesvid.ef549d2dc04b5f5ab21f.mp4",
-    "static/media/loginfruit2.jpg": "./static/media/loginfruit2.4ee08124e0fdb97d6e20.jpg",
-    "index.html": "./index.html",
-    "main.6d0b11b7.css.map": "./static/css/main.6d0b11b7.css.map",
-    "main.6de474b1.js.map": "./static/js/main.6de474b1.js.map",
-    "787.dead08b4.chunk.js.map": "./static/js/787.dead08b4.chunk.js.map"
+    "main.css": "/FTBC13-ProjectOne-SQ/static/css/main.6d0b11b7.css",
+    "main.js": "/FTBC13-ProjectOne-SQ/static/js/main.67ff804b.js",
+    "static/js/787.dead08b4.chunk.js": "/FTBC13-ProjectOne-SQ/static/js/787.dead08b4.chunk.js",
+    "static/media/strawberriesvid.mp4": "/FTBC13-ProjectOne-SQ/static/media/strawberriesvid.ef549d2dc04b5f5ab21f.mp4",
+    "static/media/loginfruit2.jpg": "/FTBC13-ProjectOne-SQ/static/media/loginfruit2.4ee08124e0fdb97d6e20.jpg",
+    "index.html": "/FTBC13-ProjectOne-SQ/index.html",
+    "main.6d0b11b7.css.map": "/FTBC13-ProjectOne-SQ/static/css/main.6d0b11b7.css.map",
+    "main.67ff804b.js.map": "/FTBC13-ProjectOne-SQ/static/js/main.67ff804b.js.map",
+    "787.dead08b4.chunk.js.map": "/FTBC13-ProjectOne-SQ/static/js/787.dead08b4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6d0b11b7.css",
-    "static/js/main.6de474b1.js"
+    "static/js/main.67ff804b.js"
   ]
 }
